@@ -1,0 +1,6 @@
+name: 'Instagram Feed'
+version: '1.0.0'
+description: 'Embed public instagram feeds into your website, without an access token.'
+developer: 'Austen Cameron'
+developer_url: 'https://406.io'
+commercial: true
