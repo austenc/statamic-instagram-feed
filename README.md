@@ -34,6 +34,7 @@ tag like so:
 
 ## Post Fields
 Each post in the feed contains a number of fields for you to use.
+
 | Field | Description |
 | ----- | ----------- |
 | `id` | The post's Instagram ID |
@@ -49,6 +50,7 @@ Each post in the feed contains a number of fields for you to use.
 
 ## Available Parameters
 Currently only one option is supported, `limit`
+
 | Option  | Default Value | Description |
 | ------------- | ------------- | --- | 
 | `limit`  | `12` | The number of recent posts to pull |
