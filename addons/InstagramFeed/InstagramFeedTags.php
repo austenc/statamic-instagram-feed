@@ -28,7 +28,7 @@ class InstagramFeedTags extends Tags
                     'width' => $media->width,
                     'image' => $media->displaySrc,
                     'thumb' => $media->thumbnailSrc,
-                    'date' => $media->date,
+                    'date' => $media->date->format('Y-m-d H:i:s'),
                     'caption' => $media->caption,
                     'comments' => $media->comments,
                     'likes' => $media->likes,
