@@ -8,17 +8,24 @@ use Statamic\Extend\Tags;
 class InstagramFeedTags extends Tags
 {
     /**
-     * The {{ instagram_feed }} tag
+     * The {{ instagram_feed }} tag.
      *
      * @return string|array
      */
     public function index()
     {
         $username = $this->getConfig('username', null);
+        $password = $this->getConfig('password', false);
 
-        if (!empty($username)) {
+        if (! empty($username)) {
             $api = new Api();
             $api->setUserName($username);
+
+            // Only attempt this if the password is set
+            if (! empty($password)) {
+                $api->login($username, $password);
+            }
+
             $feed = $api->getFeed();
 
             return $this->parseLoop(collect($feed->medias)->transform(function ($media) {
@@ -35,17 +42,5 @@ class InstagramFeedTags extends Tags
                 ];
             })->take($this->getParamInt('limit', 12))->all());
         }
-
-        return null;
     }
-
-    /**
-     * The {{ instagram_feed:example }} tag
-     *
-     * @return string|array
-     */
-    // public function example()
-    // {
-    //     //
-    // }
 }

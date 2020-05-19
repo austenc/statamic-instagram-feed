@@ -14,13 +14,15 @@ For example:
 ## Installation
 
 1. Copy the `addons/InstagramFeed` directory to your project's `site/addons` folder. 
-2. Run `php please update:addons`
+2. Run `php please update:addons` from your project's root directory
 3. Enter your Instagram username in the control panel, or by creating a file at `site/settings/addons/instagram_feed.yaml` with the following:
 ```
 username: 'your-instagram-username'
 ```
 
 Note that your profile **must be public** for this to work. 
+
+> If you have problems with authentication, set your instagram password in `settings.yaml` or the settings in control panel.
 
 ## Usage
 After configuring your Instagram username, simply use the `{{ instagram_feed }}` 
@@ -35,25 +37,25 @@ tag like so:
 ## Post Fields
 Each post in the feed contains a number of fields for you to use.
 
-| Field | Description |
-| ----- | ----------- |
-| `id` | The post's Instagram ID |
-| `image` | The URL of the image |
-| `caption` | The caption of the post |
-| `thumb` | The URL for the post's thumbnail |
-| `date` | The date it was posted |
+| Field      | Description                              |
+| ---------- | ---------------------------------------- |
+| `id`       | The post's Instagram ID                  |
+| `image`    | The URL of the image                     |
+| `caption`  | The caption of the post                  |
+| `thumb`    | The URL for the post's thumbnail         |
+| `date`     | The date it was posted                   |
 | `comments` | The total number of comments on the post |
-| `likes` | The total number of likes on the post |
-| `height` | The image's height |
-| `width` | The image's width |
+| `likes`    | The total number of likes on the post    |
+| `height`   | The image's height                       |
+| `width`    | The image's width                        |
 
 
 ## Available Parameters
 Currently only one option is supported, `limit`
 
-| Option  | Default Value | Description |
-| ------------- | ------------- | --- | 
-| `limit`  | `12` | The number of recent posts to pull |
+| Option  | Default Value | Description                        |
+| ------- | ------------- | ---------------------------------- |
+| `limit` | `12`          | The number of recent posts to pull |
 
 
 ## Requirements
