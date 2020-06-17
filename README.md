@@ -82,4 +82,4 @@ Currently only one option is supported, `limit`
 ## Support
 
 Find a bug? Have a feature request? I'd be happy to help!
-Just send an email to `austen@406.io` with the subject `Statamic Instagram Help` and I will get back to you as soon as I can. :)
+Just send an email to `austen@406.io` with the subject `Statamic Instagram Help` and I will get back to you as soon as I can.

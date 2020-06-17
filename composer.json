@@ -1,5 +1,5 @@
 {
-  "name": "austenc/instagram-feed",
+  "name": "austenc/statamic-instagram-feed",
   "description": "An instagram feed tag for Statamic",
   "type": "statamic-addon",
   "autoload": {
