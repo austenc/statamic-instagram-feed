@@ -1,6 +1,0 @@
-{
-  "name": "austen-cameron/instagramfeed",
-  "require": {
-    "pgrimaud/instagram-user-feed": "^5.6"
-  }
-}

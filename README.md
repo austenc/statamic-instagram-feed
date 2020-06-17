@@ -1,40 +1,62 @@
-# Instagram Feed for Statamic ![Statamic 2](https://img.shields.io/badge/statamic-2-blue.svg?style=flat-square)
+# Statamic Instagram Feed ![Statamic 3](https://img.shields.io/badge/statamic-3-blue.svg?style=flat-square)
 
-📸 **Easily embed photos from a public instagram feed** 📸
+📸 **Easily embed an instagram feed in your Statamic site** 📸
 
-This addon adds a fieldtype which gets images from public instagram profiles.
+### This version of the addon is only for Statamic 3+
 
-For example:
+_This is a premium addon which adds a fieldtype which gets images from instagram profiles.
+The addon is proprietary software, please buy a license on the Statamic marketplace to use it. Thank you_!
+
+**For example:**
+
 ```
 {{ instagram_feed limit="3" }}
     <img src="{{ image }}">
 {{ /instagram_feed }}
 ```
 
+## Requirements
+
+- Statamic 3
+- Instagram credentials for an account with Multi-factor auth turned OFF
+
 ## Installation
 
-1. Copy the `addons/InstagramFeed` directory to your project's `site/addons` folder. 
-2. Run `php please update:addons` from your project's root directory
-3. Enter your Instagram username in the control panel, or by creating a file at `site/settings/addons/instagram_feed.yaml` with the following:
+Require the package with composer:
+
 ```
-username: 'your-instagram-username'
+composer require austenc/statamic-instagram-feed
 ```
 
-Note that your profile **must be public** for this to work. 
+## Configuration
 
-> If you have problems with authentication, set your instagram password in `settings.yaml` or the settings in control panel.
+You need to configure an Instagram username and password. Optionally, you can
+include a different profile for the feed to display.
+
+Set the username/password `.env` file
+
+```sh
+INSTAGRAM_USERNAME='your-username'
+INSTAGRAM_PASSWORD='your-password'
+INSTAGRAM_PROFILE='other-profile' # defaults to your username
+```
+
+> The username and password do not have to match the profile displayed, as long as the account can view the profile.
 
 ## Usage
-After configuring your Instagram username, simply use the `{{ instagram_feed }}` 
-tag like so:
+
+After configuring your Instagram username and password, use the `{{ instagram_feed }}` tag:
+
 ```
 {{ instagram_feed }}
     <img src="{{ image }}">
 {{ /instagram_feed }}
 ```
+
 > You may also use the `limit` parameter to restrict the number of recent posts
 
 ## Post Fields
+
 Each post in the feed contains a number of fields for you to use.
 
 | Field      | Description                              |
@@ -49,20 +71,15 @@ Each post in the feed contains a number of fields for you to use.
 | `height`   | The image's height                       |
 | `width`    | The image's width                        |
 
-
 ## Available Parameters
+
 Currently only one option is supported, `limit`
 
 | Option  | Default Value | Description                        |
 | ------- | ------------- | ---------------------------------- |
 | `limit` | `12`          | The number of recent posts to pull |
 
-
-## Requirements
-
-This addon requires Statamic 2 and should work with any variant of it.
-
 ## Support
 
-Have a feature request or a problem with the addon? I'd be happy to help!
-Just send an email to `info@406.io` with the subject `Statamic Instagram Help` and I will get back to you as soon as I can. :)
+Find a bug? Have a feature request? I'd be happy to help!
+Just send an email to `austen@406.io` with the subject `Statamic Instagram Help` and I will get back to you as soon as I can. :)

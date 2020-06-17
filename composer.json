@@ -1,0 +1,32 @@
+{
+  "name": "austenc/instagram-feed",
+  "description": "An instagram feed tag for Statamic",
+  "type": "statamic-addon",
+  "autoload": {
+    "psr-4": {
+      "Austenc\\InstagramFeed\\": "src"
+    }
+  },
+  "require": {
+    "pgrimaud/instagram-user-feed": "^6.0"
+  },
+  "authors": [
+    {
+      "name": "Austen Cameron"
+    }
+  ],
+  "support": {
+    "email": "info@406.io"
+  },
+  "extra": {
+    "statamic": {
+      "name": "Instagram Feed",
+      "description": "Instagram feed tag for Statamic sites"
+    },
+    "laravel": {
+      "providers": [
+        "Austenc\\InstagramFeed\\ServiceProvider"
+      ]
+    }
+  }
+}

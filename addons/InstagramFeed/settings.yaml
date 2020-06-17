@@ -1,6 +1,0 @@
-fields:
-  username:
-    type: text
-  # password:
-  #   type: text
-  #   mode: password
