@@ -21,7 +21,7 @@ The addon is proprietary software, please buy a license on the Statamic marketpl
 - Instagram credentials for an account with Multi-factor auth turned OFF
 
 ## Installation
-First we need to tell composer where to find this addon, add this to your `composer.json` file:
+First we need to tell composer where to find this addon, add this to `composer.json`:
 ```json
 "repositories": [
   {
