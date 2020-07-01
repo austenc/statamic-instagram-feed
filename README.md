@@ -21,16 +21,8 @@ The addon is proprietary software, please buy a license on the Statamic marketpl
 - Instagram credentials for an account with Multi-factor auth turned OFF
 
 ## Installation
-First we need to tell composer where to find this addon, add this to `composer.json`:
-```json
-"repositories": [
-  {
-    "type": "git",
-    "url": "https://github.com/austenc/statamic-instagram-feed"
-  }
-]
-```
-Then require the package with composer:
+
+Require the package with composer:
 
 ```
 composer require austenc/statamic-instagram-feed
