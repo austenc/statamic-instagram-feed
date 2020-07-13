@@ -31,6 +31,7 @@ class InstagramFeed extends Tags
                     'caption' => $media->getCaption(),
                     'comments' => $media->getComments(),
                     'likes' => $media->getLikes(),
+                    'link' => $media->getLink(),
                 ];
             })->take($this->getInt('limit', 12))->all();
         } catch (\Throwable $th) {

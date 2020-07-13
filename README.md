@@ -68,6 +68,7 @@ Each post in the feed contains a number of fields for you to use.
 | `date`     | The date it was posted                   |
 | `comments` | The total number of comments on the post |
 | `likes`    | The total number of likes on the post    |
+| `link`     | The full URL to the post                 |
 | `height`   | The image's height                       |
 | `width`    | The image's width                        |
 
@@ -81,5 +82,6 @@ Currently only one option is supported, `limit`
 
 ## Support
 
-Find a bug? Have a feature request? I'd be happy to help!
-Just send an email to `austen@406.io` with the subject `Statamic Instagram Help` and I will get back to you as soon as I can.
+Find a bug? Have a feature request? I'd be happy to help! Open an issue on github 
+or send an email to `austen@406.io` with the subject `Statamic Instagram Help` 
+and I will get back to you as soon as I can.
