@@ -3,5 +3,5 @@
 return [
     'username' => env('INSTAGRAM_USERNAME'),
     'password' => env('INSTAGRAM_PASSWORD'),
-    'profile' => env('INSTAGRAM_PROFILE', config('INSTAGRAM_USERNAME'))
+    'profile' => env('INSTAGRAM_PROFILE')
 ];
