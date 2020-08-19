@@ -33,7 +33,7 @@ class InstagramFeed extends Tags
                     'likes' => $media->getLikes(),
                     'link' => $media->getLink(),
                 ];
-            })->take($this->getInt('limit', 12))->all();
+            })->take($this->params->get('limit', 12))->all();
         } catch (\Throwable $th) {
             if (config('app.debug')) {
                 return $th->getMessage();
