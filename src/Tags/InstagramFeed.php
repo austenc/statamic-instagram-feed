@@ -3,8 +3,8 @@
 namespace Austenc\InstagramFeed\Tags;
 
 use Instagram\Api;
-use Symfony\Component\Cache\Adapter\FilesystemAdapter;
 use Statamic\Tags\Tags;
+use Symfony\Component\Cache\Adapter\FilesystemAdapter;
 
 class InstagramFeed extends Tags
 {
@@ -36,8 +36,9 @@ class InstagramFeed extends Tags
             })->take($this->params->get('limit', 12))->all();
         } catch (\Throwable $th) {
             if (config('app.debug')) {
-                return $th->getMessage();
+                return $th->getMessage()."\n".$th->getTraceAsString();
             }
+
             return [];
         }
     }

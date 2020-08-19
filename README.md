@@ -4,8 +4,7 @@
 
 ### This version of the addon is only for Statamic 3+
 
-_This is a premium addon which adds a fieldtype which gets images from instagram profiles.
-The addon is proprietary software, please buy a license on the Statamic marketplace to use it. Thank you_!
+_This addon adds a fieldtype which gets images from instagram profiles. It uses web scraping under the hood, so beware, if Instagram changes something it may have issues! Generally, it's pretty stable._ 
 
 **For example:**
 
@@ -82,6 +81,5 @@ Currently only one option is supported, `limit`
 
 ## Support
 
-Find a bug? Have a feature request? I'd be happy to help! Open an issue on github 
-or send an email to `austen@406.io` with the subject `Statamic Instagram Help` 
-and I will get back to you as soon as I can.
+Find a bug? Have a feature request? I'd be happy to help! Open an issue [on github](https://github.com/austenc/statamic-instagram-feed) 
+or reach out on twitter [@austencam](https://twitter.com/austencam) and I will get back to you when I can.

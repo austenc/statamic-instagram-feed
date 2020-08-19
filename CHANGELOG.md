@@ -1,5 +1,12 @@
 # Unreleased
 
+# 2.1.2
+- Errors now include stack trace
+- Updated licensing and README
+
+# 2.1.1
+- Fixed bug caused by breaking changes in Statamic beta
+
 # 2.1.0
 - Fixed bug with `INSTAGRAM_PROFILE` so it defaults to the username correctly
 - Added `link` field to get URL to instagram post

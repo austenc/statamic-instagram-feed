@@ -2,7 +2,7 @@
   "name": "austenc/statamic-instagram-feed",
   "description": "An instagram feed tag for Statamic",
   "type": "statamic-addon",
-  "license": "proprietary",
+  "license": "MIT",
   "autoload": {
     "psr-4": {
       "Austenc\\InstagramFeed\\": "src"
