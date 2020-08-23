@@ -18,7 +18,7 @@ class InstagramFeed extends Tags
             $cachePool = new FilesystemAdapter('Instagram', 0, config('cache.stores.file.path'));
             $api = new Api($cachePool);
             $api->login(config('instagram-feed.username'), config('instagram-feed.password'));
-            $profile = $api->getProfile(config('instagram-feed.profile') ?? config('instagram-feed.username'));
+            $profile = $api->getProfile($this->profile());
 
             return collect($profile->getMedias())->transform(function ($media) {
                 return [
@@ -41,5 +41,13 @@ class InstagramFeed extends Tags
 
             return [];
         }
+    }
+
+    protected function profile()
+    {
+        return $this->params->get(
+            'profile',
+            config('instagram-feed.profile') ?? config('instagram-feed.username')
+        );
     }
 }

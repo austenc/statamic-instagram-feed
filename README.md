@@ -4,7 +4,7 @@
 
 ### This version of the addon is only for Statamic 3+
 
-_This addon adds a fieldtype which gets images from instagram profiles. It uses web scraping under the hood, so beware, if Instagram changes something it may have issues! Generally, it's pretty stable._ 
+_This addon adds a fieldtype which gets images from instagram profiles. It uses web scraping under the hood, so beware, if Instagram changes something it may have issues! Generally, it's pretty stable._
 
 **For example:**
 
@@ -37,7 +37,6 @@ Set the username/password `.env` file
 ```sh
 INSTAGRAM_USERNAME='your-username'
 INSTAGRAM_PASSWORD='your-password'
-INSTAGRAM_PROFILE='other-profile' # defaults to your username
 ```
 
 > The username and password do not have to match the profile displayed, as long as the account can view the profile.
@@ -73,13 +72,12 @@ Each post in the feed contains a number of fields for you to use.
 
 ## Available Parameters
 
-Currently only one option is supported, `limit`
-
-| Option  | Default Value | Description                        |
-| ------- | ------------- | ---------------------------------- |
-| `limit` | `12`          | The number of recent posts to pull |
+| Option    | Default Value | Description                        |
+| --------- | ------------- | ---------------------------------- |
+| `limit`   | `12`          | The number of recent posts to pull |
+| `profile` | `null`        | The Instagram profile to display   |
 
 ## Support
 
-Find a bug? Have a feature request? I'd be happy to help! Open an issue [on github](https://github.com/austenc/statamic-instagram-feed) 
+Find a bug? Have a feature request? I'd be happy to help! Open an issue [on github](https://github.com/austenc/statamic-instagram-feed)
 or reach out on twitter [@austencam](https://twitter.com/austencam) and I will get back to you when I can.
