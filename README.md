@@ -29,6 +29,10 @@ composer require austenc/statamic-instagram-feed
 
 ## Configuration
 
+> It is recommended to create a **dummy instagram account** without Two Factor Authentication to use with this addon.
+
+For more information, check out the [underlying composer package](https://github.com/pgrimaud/instagram-user-feed).
+
 You need to configure an Instagram username and password. Optionally, you can
 include a different profile for the feed to display.
 
