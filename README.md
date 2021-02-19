@@ -37,6 +37,7 @@ Set the username/password `.env` file
 ```sh
 INSTAGRAM_USERNAME='your-username'
 INSTAGRAM_PASSWORD='your-password'
+INSTAGRAM_PROFILE='profile-you-want-to-view'
 ```
 
 > The username and password do not have to match the profile displayed, as long as the account can view the profile.
