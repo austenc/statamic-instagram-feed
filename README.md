@@ -1,3 +1,15 @@
+# THIS PACKAGE IS NOW UNMAINTAINED
+
+Sorry folks, but this package is painful to maintain, because it's not an official way of connecting to Instagram. Since Instagram is constantly trying to discourage web scraping, it means fixes are often needed to respond to those changes. As of today (04/13/2022), this repository will be marked as deprecated. 
+
+A more "official" alternative is [https://statamic.com/addons/lbeauvisage/instagram-user-feed-using-API](https://statamic.com/addons/lbeauvisage/instagram-user-feed-using-API).
+
+If you insist on continuing down the rocky road of Instagram web scraping, see the following package (which always did the heavy lifting of this one, anyway):
+[https://github.com/pgrimaud/instagram-user-feed](https://github.com/pgrimaud/instagram-user-feed)
+
+_Feel free to [reach out on Twitter](https://twitter.com/austencam) if you want to take ownership of this repo._
+
+
 # Statamic Instagram Feed ![Statamic 3](https://img.shields.io/badge/statamic-3-blue.svg?style=flat-square)
 
 📸 **Easily embed an instagram feed in your Statamic site** 📸
